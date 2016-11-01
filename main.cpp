@@ -8,7 +8,6 @@
 
 main(){
 	menu();
-
 }
 void menu(){
 	int opcja;
@@ -29,18 +28,22 @@ int wybierz_menu(int &opcja) {
 //	int wybierz;
 	switch(opcja){
 		case 1: pokaz_baze();
+			getchar(); getchar();
 			break;
 		case 2: utworz_baze();
+			getchar(); getchar();
 			break;	
 		case 3: wczytaj_baze();
+			getchar(); getchar();
 			break;
 		case 4: zapisz_baze();
+			getchar(); getchar();
 			break;
 		case 5: cout << "Do widzenia" << endl;
 			return 0;
 			break;
 		default: cout << "Nie ma takiej opcji !!!" << endl;
-			getchar();
+			getchar(); getchar();
 			break;
 	}
 }
