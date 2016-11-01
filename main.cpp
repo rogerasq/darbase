@@ -2,23 +2,32 @@
  * Copyright @ 2016 Kszysztof Olszewski
  */
 #include <iostream>
+#include <cstdio>
+#include <cstdlib>
 #include "base.h"
 
-main(){	
+main(){
 	menu();
 
 }
 void menu(){
-	cout << " * * * D A R B A S E * * * " << endl;
-	cout << "1. Pokaż baze " << endl 
-	     << "2. Utworz baze " << endl 
-	     << "3. Wczytaj baze " << endl 
-	     << "4. Zapisz baze " << endl 
-	     << "5. Koniec" << endl;
+	int opcja;
+		while(opcja!=5){
+		system("clear");	
+		cout << " * * * D A R B A S E * * * " << endl;
+		cout << "1. Pokaż baze " << endl 
+		     << "2. Utworz baze " << endl 
+		     << "3. Wczytaj baze " << endl 
+		     << "4. Zapisz baze " << endl 
+		     << "5. Koniec" << endl;
+		cout << "Wybierz opcje: "; 
+		cin.sync(); cin >> opcja;
+		wybierz_menu(opcja);
+		} 
 }     
-int wybierz_menu() {
-	int wybierz;
-	switch(wybierz){
+int wybierz_menu(int &opcja) {
+//	int wybierz;
+	switch(opcja){
 		case 1: pokaz_baze();
 			break;
 		case 2: utworz_baze();
@@ -31,6 +40,7 @@ int wybierz_menu() {
 			return 0;
 			break;
 		default: cout << "Nie ma takiej opcji !!!" << endl;
+			getchar();
 			break;
 	}
 }

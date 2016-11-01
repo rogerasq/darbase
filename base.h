@@ -2,7 +2,7 @@
 #define BASE_H
 using namespace std;
 void menu();
-int wybierz_menu();
+int wybierz_menu(int &opcja);
 void pokaz_baze();
 void utworz_baze();
 void wczytaj_baze();

@@ -1,6 +1,6 @@
 #Projekt: Darbase
 #
-CPP = /usr/bin/g++
+CPP = g++
 OBJ = main.o file.o
 BIN = darbase
 
