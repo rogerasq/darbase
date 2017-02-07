@@ -1,4 +1,4 @@
-/* file.cpp : Darbase
+/* base.cpp : Darbase
 
    Copyright (C) 2016 Krzysztof Olszewski
 
@@ -13,15 +13,30 @@
    w licencji GNU General Public License.
 */
 
-
 #include <iostream>
 #include <cstdio>
-#include <fstream>
+#include <cstring>
 #include "base.h"
 
-void wczytaj_baze_z_pliku(){
-	cout << "wczytuje baze" << endl;
-}
-void zapisz_baze_do_pliku(){
-	cout << "zapisuje baze" << endl;
-}
+void utworz_baze(void){
+    char imie[20];
+    char nazwisko[20];
+    char nr_tel[9];
+    cout << "IMIĘ: ";
+    cin.sync();
+    cin >> imie;
+    cout << "NAZWISKO: ";
+    cin.sync();
+    cin >> nazwisko;
+    cout << "NR TELEFONU: ";
+    cin.sync();
+    cin >> nr_tel;
+    cout << imie << endl;
+    cout << nazwisko << endl;
+    cout << nr_tel << endl;
+    getchar(); getchar();
+ }
+
+void pokaz_baze(){
+	cout << "pokazuje baze" << endl;
+	}
