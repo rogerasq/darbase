@@ -12,31 +12,29 @@
    programu do określonych zastosowań. Szczegółowe informacje znajdują sie
    w licencji GNU General Public License.
 */
-
 #include <iostream>
-#include <cstdio>
-#include <cstring>
 #include "base.h"
+void Human::pobierz_dane()
+{
+    cout << "Podaj imie: ";             cin >> imie;
+    cout << "Podaj nazwisko: ";         cin >> nazwisko;
+    cout << "Podaj numer telefonu: ";   cin >> nr_tel;
 
-void utworz_baze(void){
-    char imie[20];
-    char nazwisko[20];
-    char nr_tel[9];
-    cout << "IMIĘ: ";
-    cin.sync();
-    cin >> imie;
-    cout << "NAZWISKO: ";
-    cin.sync();
-    cin >> nazwisko;
-    cout << "NR TELEFONU: ";
-    cin.sync();
-    cin >> nr_tel;
-    cout << imie << endl;
-    cout << nazwisko << endl;
-    cout << nr_tel << endl;
-    getchar(); getchar();
- }
+}
+void Human::wypisz_dane()
+{
+    cout << imie << " " << nazwisko << " " << nr_tel << endl;
+}
 
-void pokaz_baze(){
-	cout << "pokazuje baze" << endl;
-	}
+    //konstruktor
+Human::Human(string i, string naz, string nr)
+{
+    imie = i;
+    nazwisko = naz;
+    nr_tel = nr;
+}
+    //destruktor
+Human::~Human()
+{
+
+}
