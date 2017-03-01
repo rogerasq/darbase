@@ -1,1 +1,35 @@
-darbase
+#darbase
+
+'darbase' to prosta baza danych pod linuksową konsolą. Polega na zapisaniu i odczytaniu 
+z pliku tekstowego danych osobowych tj. imie, nazwisko, nr telefonu itp.
+Program oparty jest na standardowych bibliotekach. 
+
+#autor
+
+Witam, nazywam się Krzysztof Olszewski.
+adres e-mail : kriso1@wp.pl
+
+Projekt powstał w ramach nauki programowania w c++ :) Proszę więc o wyrozumiałość :)
+
+#Download
+
+Darbase można podrać z:
+
+http://github.com/rogerasq/darbase.git
+
+#Licencja
+
+Copyright (C) 2017 Krzysztof Olszewski
+
+   Ten program jest darmowy; można go rozprowadzać i modyfikować zgodnie z
+   warunkami określonymi lub wersjach późniejszych licencji GNU
+   General Public License opublikowanej przez Free Software Fondation.
+
+   Program ten jest rozprowadzany po to, aby jak najlepiej slużył
+   użytkownikom, ale nie jest on objęty żadną gwarancją, nawet gwarancją
+   wynikajacą z obowiazków sprzedawcy czy też odnoszącą się do przydatności
+   programu do określonych zastosowań. Szczegółowe informacje znajdują sie
+   w licencji GNU General Public License.
+
+   Więcej na temat licencji zawarte jest w pliku GNU.
+
