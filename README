@@ -6,7 +6,7 @@ Program oparty jest na standardowych bibliotekach.
 
 #autor
 
-Witam, nazywam się Krzysztof Olszewski.
+Witam, nazywam się Krzysztof Olszewski. Programowanie traktuję jako dobrą zabawę.
 adres e-mail : kriso1@wp.pl
 
 Projekt powstał w ramach nauki programowania w c++ :) Proszę więc o wyrozumiałość :)
@@ -16,6 +16,11 @@ Projekt powstał w ramach nauki programowania w c++ :) Proszę więc o wyrozumia
 Darbase można podrać z:
 
 http://github.com/rogerasq/darbase.git
+
+#Testing
+
+Obecnie projekt rozwijany i testowany jest na minikomputerze Raspberry PI 2 (ARM)
+na systemie operacyjnym Raspbian 8.
 
 #Licencja
 
