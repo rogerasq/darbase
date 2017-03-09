@@ -35,8 +35,10 @@ int main(int argc, char * argv[])
 		}
 		}
   // Human osoba;
-    Menu lista;
-    lista.menu_glowne();
+    Menu *lista;
+    lista = new Menu;
+    lista->menu_glowne();
+    delete lista;
    // osoba.pobierz_dane();
    // osoba.wypisz_dane();
     //zapisz_dane_do_pliku(osoba);
