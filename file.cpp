@@ -18,6 +18,7 @@
 #include <cstdio>
 #include <cstdlib> // exit(0);
 #include <fstream>
+#include <vector>
 #include "base.h"
 
 void zapisz_dane_do_pliku(Human &osoba)
@@ -63,10 +64,63 @@ void odczytaj_dane_z_pliku(Human &osoba)
 }
 void usun_dane_z_pliku(Human &osoba)
 {
-   /* fstream baza;
-    baza.open("base.b", ios::out | ios::app);
+//próba nr 2 jakoś działa :)
 
-    baza.close(); */
-    cout << "funkcja w budowie !!" << endl;
+   vector<string> linie;
+   string linia;
+   int nr_linii;
+   ofstream plik_do_zapisu;
+   ifstream plik_do_odczytu;
+
+   plik_do_odczytu.open("base.b");
+   while(getline(plik_do_odczytu, linia))
+   {
+      linie.push_back(linia);
+   }
+   plik_do_odczytu.close();
+
+   cout << "którą linie usunąć:" << flush;
+   cin >> nr_linii;
+   cin.ignore();
+
+   if ((nr_linii > 0)&&(nr_linii <= linie.size()))
+   {
+      plik_do_zapisu.open("base.b");
+      for (int i = 0; i < linie.size(); ++i)
+      {
+         if(i != nr_linii - 1) //linie liczy sie od 1
+         {
+            plik_do_zapisu << linie[i] << "\n";
+         }
+      }
+      plik_do_zapisu.close();
+   }
+   else
+   {
+      cerr << "Zly numer linii";
+   }
+   cin.get();
     getchar(); getchar();
+}
+
+/* funkcje do rozbudowy
+    nie wskazuje ilości linii w pliku
+    */
+
+void odczytaj_id_z_pliku(Human &osoba)
+{
+    vector<string> linie;
+    string linia;
+    ifstream plik;
+    plik.open("base.b");
+    while(getline(plik,linia)){
+            linie.push_back(linia);
+    }
+    plik.close();
+    cout << "Ilość linii: " << linia << endl;
+    getchar(); getchar();
+}
+void wpisz_id_do_pliku()
+{
+
 }
