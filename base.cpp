@@ -27,11 +27,15 @@ void Human::wypisz_dane()
 }
 
     //konstruktor
-Human::Human(string i, string naz, string nr)
+Human::Human(string i, string n, string nr) : imie(i), nazwisko(n), nr_tel(nr)
 {
-    imie = i;
-    nazwisko = naz;
-    nr_tel = nr;
+}
+    //konstruktor domniemany
+Human::Human()
+{
+    imie = "Gal";
+    nazwisko = "Anonim";
+    nr_tel = "000000000";
 }
     //destruktor
 Human::~Human()

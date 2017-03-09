@@ -16,10 +16,12 @@ class Human
     friend void odczytaj_dane_z_pliku(Human &);
     friend void usun_dane_z_pliku(Human &);
 
- /* Przypisanie domyślnych wartości dla konstruktora */
-        Human(string="Gal", string="Anonim", string="0000000");
-
-       ~Human();
+        //konstruktor
+        Human(string i, string n, string nr);
+        //konstruktor domniemany
+        Human();
+        //destruktor
+        ~Human();
 };
 
 #endif
